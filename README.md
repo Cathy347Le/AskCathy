@@ -11,6 +11,9 @@ Built an app using full CRUD
 5. Create file system
 6. commit
 7. create routes and test hello world first
+8. build out the controllers and test that the routes still work
+9. Work on views - install body parser
+10. create a simple view for each hbs file. Use a header tag and check that it renders
 
 #File System
 

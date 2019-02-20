@@ -1,15 +1,15 @@
 module.exports = {
   new: function(req, res) {
-    res.send("Create new question");
+    res.render("question/new");
   },
   create: function(req, res) {
     res.redirect("/");
   },
   show: function(req, res) {
-    res.send(`show page ${req.params.id}`);
+    res.render("question/show");
   },
   edit: function(req, res) {
-    res.send(`edit page ${req.params.id}`);
+    res.render("question/edit");
   },
   update: function(req, res) {
     res.redirect("/");
