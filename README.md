@@ -7,13 +7,14 @@ Built an app using full CRUD
 1. Create index.js
 2. Test if you're able to connect to Express and send hello world to the browser
 3. Install necessary dependencies
-4. commit
-5. Create file system
-6. commit
-7. create routes and test hello world first
-8. build out the controllers and test that the routes still work
-9. Work on views - install body parser
-10. create a simple view for each hbs file. Use a header tag and check that it renders
+4. Create file system
+5. create routes and test hello world first
+6. build out the controllers and test that the routes still work
+7. Work on views - install body parser
+8. create a simple view for each hbs file. Use a header tag and check that it renders
+9. Once views are scaffolded, we need to create data. Connect to mongoose in db folder and Define question model
+10. install mongodb
+11. Add test data - aka data seeding
 
 #File System
 
