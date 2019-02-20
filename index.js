@@ -3,8 +3,6 @@ const app = express();
 
 app.set("view engine", "hbs");
 
-app.get("/", function(req, res) {
-  res.send("Hello World");
-});
+app.use(require("./routes/index"));
 
 app.listen(5000, () => console.log("listening on port 5000"));
