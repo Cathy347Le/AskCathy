@@ -1,0 +1,24 @@
+{
+  "name": "askcathy",
+  "version": "1.0.0",
+  "description": "Solo MEHN Lab: stackOverflow project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cathy347Le/askcathy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cathy347Le/askcathy/issues"
+  },
+  "homepage": "https://github.com/Cathy347Le/askcathy#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.2"
+  }
+}
