@@ -1,28 +1,17 @@
 const express = require("express");
 const router = express.Router();
+const questionController = require("../controllers/question");
 
-router.get("/new", function(req, res) {
-  res.send("Create new question");
-});
+router.get("/new", questionController.new);
 
-router.post("/", function(req, res) {
-  res.redirect("/");
-});
+router.post("/", questionController.create);
 
-router.get("/:id", function(req, res) {
-  res.send(`show page ${req.params.id}`);
-});
+router.get("/:id", questionController.show);
 
-router.get("/:id/edit", function(req, res) {
-  res.send(`edit page ${req.params.id}`);
-});
+router.get("/:id/edit", questionController.edit);
 
-router.put("/:id", function(req, res) {
-  res.redirect("/");
-});
+router.put("/:id", questionController.create);
 
-router.delete("/:id", function(req, res) {
-  res.redirect("/");
-});
+router.delete("/:id", questionController.delete);
 
 module.exports = router;
