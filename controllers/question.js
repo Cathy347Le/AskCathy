@@ -1,3 +1,5 @@
+const Question = require("../models/index");
+
 module.exports = {
   new: function(req, res) {
     res.render("question/new");
@@ -12,10 +14,14 @@ module.exports = {
     });
   },
   show: function(req, res) {
-    res.render("question/show");
+    Question.findById(req.params.id).then(question => {
+      res.render("question/show", { question });
+    });
   },
   edit: function(req, res) {
-    res.render("question/edit");
+    Question.findById(req.params.id).then(question => {
+      res.render("question/edit", { question });
+    });
   },
   update: function(req, res) {
     res.redirect("/");

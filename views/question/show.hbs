@@ -1,1 +1,8 @@
-<h1>show</h1>
+<h1>Title: {{question.title}}</h1>
+<p>Question: {{question.description}}</p>
+
+<form action="/question/{{question.id}}/edit">
+    <p>
+        <input type="submit" value="Edit">
+    </p>
+</form>

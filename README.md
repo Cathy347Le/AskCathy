@@ -14,7 +14,11 @@ Built an app using full CRUD
 8. create a simple view for each hbs file. Use a header tag and check that it renders
 9. Once views are scaffolded, we need to create data. Connect to mongoose in db folder and Define question model
 10. install mongodb
-11. Add test data - aka data seeding
+11. Add test data - aka data seeding and run it in mongo
+12. display test data on homepage
+13. Create a new question - setup views and controllers
+14. show the new question
+15. Edit/Update a question
 
 #File System
 
