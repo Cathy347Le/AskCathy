@@ -24,9 +24,14 @@ module.exports = {
     });
   },
   update: function(req, res) {
-    res.redirect("/");
+    Question.findByIdAndUpdate(req.params.id, req.body).then(question => {
+      res.redirect(`/question/${question.id}`);
+    });
   },
   delete: function(req, res) {
-    res.redirect("/");
+    Question.remove({ _id: req.params.id }).then(question => {
+      console.log(question);
+      res.redirect("/");
+    });
   }
 };

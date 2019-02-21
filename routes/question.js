@@ -10,7 +10,7 @@ router.get("/:id", questionController.show);
 
 router.get("/:id/edit", questionController.edit);
 
-router.put("/:id", questionController.create);
+router.put("/:id", questionController.update);
 
 router.delete("/:id", questionController.delete);
 
