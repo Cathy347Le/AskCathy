@@ -1,14 +1,16 @@
 <h1>Ask Cathy</h1>
 
-{{#if questions}}
-<div>
-    {{#each questions}}
+<div class="container">
+    {{#if questions}}
     <div>
-        <a href="/question/{{id}}">Title: {{title}}</a>
-        <p>Question: {{description}}</p>
+        {{#each questions}}
+        <div>
+            <a href="/question/{{id}}">Title: {{title}}</a>
+            <p>Question: {{description}}</p>
+        </div>
+        {{/each}}
     </div>
-    {{/each}}
-</div>
-{{/if}}
+    {{/if}}
 
-<a href="/question/new"> Add Question</a>
+    <a href="/question/new"> Add Question</a>
+</div>
