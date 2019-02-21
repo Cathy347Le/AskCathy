@@ -19,6 +19,9 @@ Built an app using full CRUD
 13. Create a new question - setup views and controllers
 14. show the new question
 15. Edit/Update a question
+16. Install methodOverride
+17. Add Delete feature
+18. Update show views to include Edit, Home, Delete button
 
 #File System
 
