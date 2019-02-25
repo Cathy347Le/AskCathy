@@ -30,7 +30,7 @@ module.exports = {
   },
   delete: function(req, res) {
     Question.remove({ _id: req.params.id }).then(question => {
-      console.log(question);
+      // console.log(question);
       res.redirect("/");
     });
   }

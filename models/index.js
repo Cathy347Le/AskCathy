@@ -1,9 +1,6 @@
 const mongoose = require("../db/connection");
-const Schema = mongoose.Schema;
 
-const QuestionSchema = new Schema({
-  title: String,
-  description: String
-});
-
-module.exports = mongoose.model("Question", QuestionSchema);
+module.exports = {
+  Question: mongoose.model("Question", require("./question")),
+  User: mongoose.model("User", require("./user"))
+};
