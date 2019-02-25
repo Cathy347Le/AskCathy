@@ -8,7 +8,7 @@ router.get("/", function(req, res) {
   });
 });
 
-router.use("/user", require("./user"));
+router.use(require("./user"));
 router.use("/question", require("./question.js"));
 
 module.exports = router;
