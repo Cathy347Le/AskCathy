@@ -6,11 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Express Ask Cathy</title>
+    <title>Ask Cathy</title>
 </head>
 
 <body>
-    {{{ body }}}
+    <header class="site-header">
+        <nav>
+            <div class="nav-wrapper orange dark-2">
+                <a href="/" class="brand-logo left">Ask Cathy</a>
+                <ul class="right">
+                    {{#if user}}
+                    <li>
+                        <p>Welcome {{user.username}}</p>
+                    </li>
+                    <li><a href="/user/logout">Log Out</a></li>
+                    {{else}}
+                    <li><a href="/user/login">Sign Up</a></li>
+                    <li><a href="/user/sign-up">Log In</a></li>
+                    {{/if}}
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        {{{ body }}}
+    </main>
 </body>
 
 </html>
